@@ -10,7 +10,7 @@
 <script>
 let s = '';
 let b = 0 ;
-let c = 10 ; 
+let c = 5 ; 
 
 for(let i = 0 ; i < c ; i++ ){
     for ( let j = 0 ; j <= i ; j++){
@@ -18,19 +18,38 @@ for(let i = 0 ; i < c ; i++ ){
     }
     s += '\n'
     
-}
-
-
-
-for (let a = 0 ; a <= 10 ; a++){
-    s += '*';
-    for( let d = 0 ; d <= a ; d++ ){
-        s += '*';
+} 
+for (let d = c ; d >= b ; d--) {
+    for(let e = 0 ; e <= d ; e++){
+        s += '*' ;
     }
     s += '\n' ;
 }
-console.log(s);
 
+for(let a = 0 ; a <= c ; a++){
+    for (let b = 0 ; b < a ; b++){
+        s += ' ';
+    }
+    for( let c = 5 ; c > a ; c--){
+        s += '*';
+    }
+    s += '\n';
+}
+
+for(let a = 5 ; a > 0 ; a--){
+    for ( let b = 0 ; b <=  ; b++ ){
+        s+= '*';
+    }
+    for( let c = 0 ; c < a; c++ ){
+        s += '1';
+    }
+    s += '\n';
+
+}
+
+
+
+console.log(s);
 </script>
 
 </body>
