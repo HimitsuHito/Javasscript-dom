@@ -1,16 +1,16 @@
 let noAngkot = 1 ;
-let jmlAngkot = 10;
-let AngkotBeroperasi = 6 ;
+let jumlahAngkot = 10 ;
+let angkotBeroperasi = 6 ;
 
-for(noAngkot = noAngkot ; noAngkot <= jmlAngkot ; noAngkot++){
-    if(noAngkot <= AngkotBeroperasi && noAngkot !== 5) {
-        console.log('no.' + noAngkot + ' Beroperasi dengan baik');
-    } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5){
-        console.log('no. ' + noAngkot + ' sedang lembur')
-    } 
+for ( noAngkot = 1 ; noAngkot <= jumlahAngkot ; noAngkot++ ) {
+    if(noAngkot <= angkotBeroperasi && noAngkot !== 1 ) {
+        console.log('No Angkot ' + noAngkot + ' beroperasi dengan baik');
+    }else if (noAngkot === 7 || noAngkot === 10 || noAngkot === 1){
+        console.log('No Angkot ' + noAngkot + ' Sedang lembur')
+    }
+    
     
     else {
-        console.log('no. '+ noAngkot +' tidak beroperasi');
-
+        console.log('No Angkot ' + noAngkot + ' Tidak beroperasi')
     }
 }

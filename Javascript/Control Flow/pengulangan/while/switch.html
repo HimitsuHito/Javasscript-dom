@@ -1,4 +1,4 @@
-<html lang="en">
+<htm lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +9,25 @@
     
 <script>
 
-let item = prompt('masukan nama makanan/ minuman \n (cth:nasi,daging,susu,softdrink,hamburger');
-switch ( item ) {
-    case 'nasi' :
-    case 'susu' :
-    case 'daging' :
-    alert('Makanan / minuman SEHAT');
-    break; // fungsi break adalah untuk memberhentikan jika tidak ada break maka alert selanjutnya akan muncul
-    
-    case 'hamburger' :
-    case 'softdrink' :  
-    alert ('Makanan / Minuman tidak SEHAT ');
-    break;
-    
+let item = prompt('masukan nama makanan/minuman \n  cth(nasi,gula,teh herbal, softdrink)');
+// memasukan nilai true bukan string. jadi jika ingin menggunakan harus ditambah dengan string  
+    switch(item) {
+        case 'nasi' :
+        alert('makanan ini tidak sehat');
+        break
+        case 'teh herbal': 
+        alert ('minuman sehat');
+        break ;
+        case 'softdrink' :
+        case 'gula' :
+        alert('minuman tidak sehat');
+        break;
     default :
-    alert ('anda memasukan makan/Minuman yang salah');
-    break;
+    // default berfungsi untuk selain 
+    alert ('makanan dan minuman yang anda masukan tidak ada') ;
+    break
+
 }
 </script>
 </body>
-</html>
+</htm/l>
