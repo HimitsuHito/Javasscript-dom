@@ -8,35 +8,49 @@
 <body>
     
 <script>
+let tanya = true ;
+while(tanya){
 // menangkap pilihan player
-let p = prompt('pilih : gajah, semut , orang');
-
-
-
+alert ('selamat datang di permainan suwit jawa');
 // menangkap pilihan computer
-
+let p = prompt ('Pilih : gajah , semut , orang');
 // membangkitkan bilangan random  
 let comp = Math.random();
 
-if(comp < 0.37) {
+if( comp < 0.37 ){
     comp = 'gajah' ;
-}else if (comp < 0.67 && comp > 0.37 ){
+}else if(comp > 0.37 && comp < 0.67 ){
+    comp = 'semut' ;
+}else if(comp > 0.67 && comp < 0.99 ){
     comp = 'orang' ;
-}else if (comp > 0.67 && comp < 0.67 ){
-    comp ='semut' ;
-} else {
-    comp = 'nilai yang anda masukan salah '; 
-}
-// menentukan rules 
+} 
+// menentukan rules
+let hasil = '';
 
 if (p == comp ){
-    alert ('anda seri');
+    hasil = 'SERI';
+} else if (p == 'orang'){
+     hasil = (comp == 'orang') ? Menang : kalah ;
+} else if ( p == 'gajah') {
+    if (comp == 'semut'){
+        hasil = 'Kalah' ;
+    }else {
+        hasil = 'Menang' ;
+    }
+}else if (p == 'semut ') {
+    if (comp == 'orang'){
+        hasil = 'Menang' ;
+    }else {
+        hasil = 'kalah';
+    }
 }
+alert ('Player : ' + p + ' Computer memilih : ' + comp + ' \n kamu ' + hasil );
 
-
-
-
+tanya = confirm('lagi ?') ;
+}
 // tampilkan hasilnya
+alert ('terima kasih telah bermain');
+</script>  
 </script>
 </body>
 </html>
