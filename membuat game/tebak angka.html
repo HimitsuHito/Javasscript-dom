@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+// pengulangan
+i = 3 ;
+while( i >= 1 ){  
+// pilihan player 
+let p = prompt('tebak angka 1-9 \n anda memiliki kesempatan ' + i);
+// angka random yang diacak
+
+let bulat = Math.floor(Math.random()*10*1);
+if(i > 0 ){
+    bulat == bulat ;
+}
+let hasil = p 
+if (p == bulat ){
+        alert('Nilai yang anda masukan benar')
+        i = 0;
+}else if(p > bulat ){
+  alert('nilai yang anda masukan terlalu besar');
+}else if(p < bulat ) {
+    alert ('nilai yang anda masukan terlalu kecil');
+}else if (p = '' || p.false) {
+    alert('anda harus memasukan angka');
+}
+else {
+     alert('anda memasukan selain angka');
+}
+i--
+console.log(bulat);
+}
+alert('terima kasih telah bermain');
+
+
+</script>
+    
+</body>
+</html>
