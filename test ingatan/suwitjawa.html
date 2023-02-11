@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+let tanya = true ;
+while(tanya){
+// membuat pilihan player
+let p = prompt('pilih gajah, semut / orang' );
+// membangkitkan angka random dari player 
+let comp = Math.random()*1 ;
+let hasil = '' ;
+if (comp <= 0.37 ){ 
+        comp = 'semut';
+}else if (comp < 0.67 && comp > 0.37 ){
+        comp ='gajah' ;
+}else if (comp < 0.97 && comp > 0.67){
+        comp = 'orang' ;
+}
+// menentukan rules
+if ( p == comp ){
+    hasil = 'seri';
+
+}else if(p == 'orang'){
+    if(comp == 'semut'){
+        hasil = 'menang';
+    }else{
+        hasil = 'kalah';
+    }
+}else if(p == 'semut'){
+    hasil = (comp == 'orang' ) ? 'kalah' : 'menang' ;
+}else if(p == 'gajah'){
+    hasil = (comp == 'orang') ?'menang' :'kalah' 
+} 
+// mengeluarkan hasil 
+alert('player memasukan ' + p + ' comp : '+ comp + '\n hasilnya adalah '+ hasil)
+
+tanya = confirm('apakah ingin bermain lagi');
+}
+alert ('terima kasih telah bermain ');
+</script>
+</body>
+</html>
