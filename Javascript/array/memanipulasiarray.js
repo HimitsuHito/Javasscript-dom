@@ -44,3 +44,18 @@ arr4.unshift('orang')
 console.log(arr4.join(' - '));
 arr4.shift();
 console.log(arr4.join(' - '));
+
+// var arr4 =  ['ferry','wilanass','orang'];
+// 4. slice & splice 
+// splice (Indexawal, mau di hapus berapa, ElementBaru1, ElementBaru2,....)
+
+arr4.splice(2,0,'humanity','wiliam','permen');
+console.log(arr4.join(' - '));
+
+// slice(awal,akhir);
+// index awalnya terbawa dan index akhir dikurangin satu
+// selalu menghasilkan array baru jadi harus membuat tampungannya terlebih dahulu
+
+let arr5 =  ['ferry','wilanass','orang','kemduian','selalu'];
+let arr6 = arr5.slice(1,3)
+console.log(arr6.join(' - '));
