@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+// this
+
+// 1. function declaration
+function halo() {
+    console.log(this)
+    // ketika this dipake di function declaration maka sebuah window yang akan dikeluarkan oleh this tersebut tidak mengembalikan sebuah object
+    console.log('halo');
+}
+halo();
+//2.function declaration
+function halo() {
+    let obj = {}
+    obj.halo = function(){
+        console.log(this);
+        // this ketika dipake di function declaration maka akan mengembalikan sebuah ssemua object yang bersangkutan
+        console.log('halo');
+    }
+}
+halo()  
+// 3. constructor
+// ketika menggunakan di consturctor maka this akan mengembalikan object tersebut maka lebih tepat ketika menggunakannya di construct
+function halo(){
+    console.log(this);
+    console.log(halo);
+}
+let obj2 = new halo()
+
+
+
+
+</script>
+</body>
+</html>

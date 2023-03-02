@@ -31,11 +31,15 @@ function mahasiswa(nama,nim,jurusan,tahun) {
 }
 let mhs1 = mahasiswa("ferry",1231,"sistem informatika",2023);
 // Constructer
+// perbedaan constructer and declaration adalah dengan this
 function mahasiswa2(nama,nim,jurusan,tahun) {
+    // let this = {} ;
     this.nama = nama;
     this.nim = nim ;
     this.jurusan = jurusan ;
     this.tahun = tahun;
+    // return this; 
+    // sama saja dengan membuat object dengan nama this
 }
 
 let mhs2 = new mahasiswa2('wilana',1234,'jaringan',2023);
