@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+// membuat object
+// object literal
+let Penumpangpesawat = { 
+    nama : "Ferry",
+    bangku : 52 ,
+    alamat : {
+        jalan : "amal 2 " ,
+        kota : "bandung" ,
+        kodepos : 13430
+    }
+}
+// function declaration
+function mahasiswa(nama,nim,jurusan,tahun) {
+    let mhs = {} ;
+    mhs.nama = nama ; 
+    mhs.nim = nim ;
+    mhs.jurusan = jurusan;
+    mhs.tahun = tahun ;
+    return mhs
+}
+let mhs1 = mahasiswa("ferry",1231,"sistem informatika",2023);
+// Constructer
+function mahasiswa2(nama,nim,jurusan,tahun) {
+    this.nama = nama;
+    this.nim = nim ;
+    this.jurusan = jurusan ;
+    this.tahun = tahun;
+}
+
+let mhs2 = new mahasiswa2('wilana',1234,'jaringan',2023);
+
+</script>
+</body>
+</html>
