@@ -24,7 +24,10 @@ function angkot(sopir,trayek,penumpang,kas) {
                 } else if(i == this.penumpang.length - 1 ){
                     this.penumpang.push(namaPenumpang);
                     return this.penumpang;
-                } 
+                } else if(this.penumpang.length > 10 );{
+                    console.log('mohon maaf angkot sudah penuh');
+                    return this.penumpang
+                }
             }
         } 
     } 
